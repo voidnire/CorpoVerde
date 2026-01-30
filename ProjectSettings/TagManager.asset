@@ -3,17 +3,19 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 3
-  tags: []
+  tags:
+  - Enemy
+  - Semente
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - Background
+  - Boudaries
   - Water
   - UI
-  - 
-  - 
-  - 
+  - Player
+  - Enemies
+  - Projetil
   - 
   - 
   - 
@@ -44,11 +46,17 @@ TagManager:
   - name: Background
     uniqueID: 2620248865
     locked: 0
+  - name: Weapons
+    uniqueID: 490553023
+    locked: 0
   - name: Objects
     uniqueID: 2970358981
     locked: 0
   - name: Foreground
     uniqueID: 3329471783
+    locked: 0
+  - name: UI
+    uniqueID: 1146703683
     locked: 0
   m_RenderingLayers:
   - Default

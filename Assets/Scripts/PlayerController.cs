@@ -2,13 +2,37 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
+    public static PlayerController Instance;
+
     [SerializeField] private Rigidbody2D rb;
-    [SerializeField] private float moveSpeed = 4;
+    [SerializeField] private float moveSpeed = 5;
+
     public Vector3 playerMoveDirection;
+
+    public float playerMaxHealth = 100;
+    public float playerCurrentHealth;
+
+    [SerializeField] private Animator animator;
+
+    private bool isImmune;
+    [SerializeField] private float immunityDuration = 1f;
+    [SerializeField] private float immunityTimer;
+
 
     void Start()
     {
-        
+        playerCurrentHealth = playerMaxHealth;
+        UIController.Instance.UpdateHealthSlider();
+
+    }
+
+    void Awake()
+    {
+        if(Instance != null && Instance != this)
+        {
+            Destroy(this);
+        }else
+            Instance = this; 
     }
 
     void Update()
@@ -17,11 +41,46 @@ public class PlayerController : MonoBehaviour
         float inputY = Input.GetAxisRaw("Vertical");
         playerMoveDirection = new Vector2(inputX, inputY).normalized;
 
+        /*      ANIMAÇÃO     
+        animator.SetFloat("moveX", inputX);
+        animator.SetFloat("moveY", inputY);
+
+        if(playerMoveDirection == Vector3.zero)
+        {
+            animator.SetBool("isMoving", false); //POR ESSE BOOL LÁ
+        }
+        else
+        {
+            animator.SetBool("isMoving", true);
+        } */
+
+        if(immunityTimer > 0)
+            immunityTimer -= Time.deltaTime;
+        else
+            isImmune = false;
     }
 
     private void FixedUpdate()
     {
         rb.linearVelocity = new Vector2(playerMoveDirection.x * moveSpeed,
             playerMoveDirection.y * moveSpeed);
+    }
+
+    public void TakeDamage(float damageAmount)
+    {
+        if (!isImmune)
+        {
+            isImmune = true;
+            immunityTimer = immunityDuration;
+
+            playerCurrentHealth -= damageAmount;
+            UIController.Instance.UpdateHealthSlider();
+            if (playerCurrentHealth <= 0)
+            {
+                gameObject.SetActive(false);
+                Debug.Log("Player Died");
+                GameManager.Instance.GameOver();
+            }
+        }
     }
 }
