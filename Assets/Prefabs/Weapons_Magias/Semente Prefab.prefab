@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 2711966233400808576}
   - component: {fileID: 992220419026422312}
   - component: {fileID: 63989095807323798}
+  - component: {fileID: -6670551714075223370}
   m_Layer: 8
   m_Name: Semente Prefab
   m_TagString: Enemy
@@ -152,3 +153,18 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &-6670551714075223370
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8417036225950911627}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9969e72f672f19479c45723a9278d0d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 10
+  destroyTime: 3
+  damage: 10

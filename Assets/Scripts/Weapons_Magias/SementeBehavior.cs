@@ -2,13 +2,16 @@ using UnityEngine;
 
 public class SementeBehavior : MonoBehaviour
 {
-    private Rigidbody rb;
+    private Rigidbody2D rb;
     [SerializeField] private float speed = 10f;
     [SerializeField] private float destroyTime = 3f;
+    [SerializeField] private LayerMask whatDestroysBullet;
     [SerializeField] private int damage = 10;
+
+    private bool destroyed;
     private void Start()
     {
-        rb = GetComponent<Rigidbody>();
+        rb = GetComponent<Rigidbody2D>();
 
         SetDestroyTime();
 
@@ -17,7 +20,6 @@ public class SementeBehavior : MonoBehaviour
 
     private void SetStraightVelocity()
     {
-        float speed = 10f; // Define a velocidade da semente
         rb.linearVelocity = transform.right * speed;
     }
 
@@ -25,4 +27,23 @@ public class SementeBehavior : MonoBehaviour
     {
         Destroy(gameObject, destroyTime); // Destrói o objeto após 3 segundos
     }
+
+    void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (destroyed)
+            return;
+
+        if (collision.CompareTag("Enemy"))
+        {
+            Debug.Log("Semente hit an enemy!");
+            Enemy enemy = collision.GetComponent<Enemy>();
+            if (enemy != null)
+                enemy.TakeDamage(damage);
+
+            destroyed = true;
+            Destroy(gameObject);
+        }
+    }
+
+
 }

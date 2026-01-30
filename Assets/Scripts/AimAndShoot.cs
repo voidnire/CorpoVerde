@@ -42,11 +42,11 @@ public class AimAndShoot : MonoBehaviour
         Vector3 localScale= Vector3.one; //(1f,1f,1f)
         if (angle > 90 && angle < -90) //< -90
         {
-            localScale.y = -1f;
+            //localScale.y = -1f;
         }
         else
         {
-            localScale.y = 1f;
+            //localScale.y = 1f;
         }
 
         //mouseWorldPos.z = 0f;
