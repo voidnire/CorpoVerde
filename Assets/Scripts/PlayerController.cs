@@ -1,4 +1,4 @@
-using UnityEngine;
+﻿using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
@@ -18,12 +18,20 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private float immunityDuration = 1f;
     [SerializeField] private float immunityTimer;
 
+    private Collectible collectibleNearby;
+    private PlayerInventory inventory;
 
     void Start()
     {
         playerCurrentHealth = playerMaxHealth;
-        UIController.Instance.UpdateHealthSlider();
+        Debug.Log("PlayerController está em: " + gameObject.name);
 
+        inventory = GetComponent<PlayerInventory>();
+
+        if (inventory == null)
+            Debug.LogError(" PlayerInventory NÃO está neste GameObject");
+        else
+            Debug.Log(" PlayerInventory encontrado");
     }
 
     void Awake()
@@ -41,13 +49,13 @@ public class PlayerController : MonoBehaviour
         float inputY = Input.GetAxisRaw("Vertical");
         playerMoveDirection = new Vector2(inputX, inputY).normalized;
 
-        /*      ANIMA��O     
+        /*      ANIMAÇÃO     
         animator.SetFloat("moveX", inputX);
         animator.SetFloat("moveY", inputY);
 
         if(playerMoveDirection == Vector3.zero)
         {
-            animator.SetBool("isMoving", false); //POR ESSE BOOL L�
+            animator.SetBool("isMoving", false); //POR ESSE BOOL LÁ
         }
         else
         {
@@ -58,6 +66,12 @@ public class PlayerController : MonoBehaviour
             immunityTimer -= Time.deltaTime;
         else
             isImmune = false;
+
+        if (collectibleNearby != null && Input.GetKeyDown(KeyCode.E))
+        {
+            collectibleNearby.Collect(inventory);
+            collectibleNearby = null;
+        }
     }
 
     private void FixedUpdate()
@@ -81,6 +95,21 @@ public class PlayerController : MonoBehaviour
                 Debug.Log("Player Died");
                 GameManager.Instance.GameOver();
             }
+        }
+    }
+    void OnTriggerEnter2D(Collider2D other)
+    {
+        if (other.CompareTag("Collectible"))
+        {
+            collectibleNearby = other.GetComponent<Collectible>();
+        }
+    }
+
+    void OnTriggerExit2D(Collider2D other)
+    {
+        if (other.CompareTag("Collectible"))
+        {
+            collectibleNearby = null;
         }
     }
 }

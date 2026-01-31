@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Enemy
   - Semente
+  - Collectible
   layers:
   - Default
   - TransparentFX
