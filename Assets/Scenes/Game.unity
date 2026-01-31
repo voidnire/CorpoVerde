@@ -12092,7 +12092,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: HEALTH
+  m_text: 100 / 100
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 349a55b1519c4e84eb9c4efd2f46f158, type: 2}
   m_sharedMaterial: {fileID: -7950277331771416467, guid: 349a55b1519c4e84eb9c4efd2f46f158, type: 2}
@@ -23279,6 +23279,7 @@ GameObject:
   - component: {fileID: 2116112369}
   - component: {fileID: 2116112370}
   - component: {fileID: 2116112371}
+  - component: {fileID: 2116112372}
   m_Layer: 6
   m_Name: Player
   m_TagString: Player
@@ -23596,6 +23597,18 @@ MonoBehaviour:
   gun: {fileID: 1253167050}
   bullet: {fileID: 8417036225950911627, guid: 0c7c6b5fccc709d4eace5e96584a34c4, type: 3}
   bulletSpawnPoint: {fileID: 1696862551}
+--- !u!114 &2116112372
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2116112363}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7e84b423d2a6d544aa1c626c8fa154a7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &6996903785829874566
 PrefabInstance:
   m_ObjectHideFlags: 0
