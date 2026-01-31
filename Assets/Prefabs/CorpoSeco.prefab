@@ -15,6 +15,8 @@ GameObject:
   - component: {fileID: 6708388176757746071}
   - component: {fileID: 1387503242945544677}
   - component: {fileID: 4190303238818458522}
+  - component: {fileID: 3436650089201777518}
+  - component: {fileID: 8657870112393687528}
   m_Layer: 6
   m_Name: CorpoSeco
   m_TagString: Player
@@ -243,7 +245,7 @@ MonoBehaviour:
   playerMoveDirection: {x: 0, y: 0, z: 0}
   playerMaxHealth: 100
   playerCurrentHealth: 0
-  animator: {fileID: 0}
+  animator: {fileID: 8657870112393687528}
 --- !u!114 &1387503242945544677
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -256,9 +258,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5450e4b4098725b47b84fbb4c1a8f19c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gun: {fileID: 0}
-  bullet: {fileID: 0}
-  bulletSpawnPoint: {fileID: 0}
+  gun: {fileID: 4733484176205199568}
+  bullet: {fileID: 8417036225950911627, guid: 0c7c6b5fccc709d4eace5e96584a34c4, type: 3}
+  bulletSpawnPoint: {fileID: 3250730819613605197}
 --- !u!114 &4190303238818458522
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -271,6 +273,65 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7e84b423d2a6d544aa1c626c8fa154a7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!70 &3436650089201777518
+CapsuleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1779420676890988978}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: 0, y: 1}
+  m_Size: {x: 1, y: 2}
+  m_Direction: 0
+--- !u!95 &8657870112393687528
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1779420676890988978}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 8ba4a87a7516e704b95e1338a73d496b, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &4733484176205199568
 GameObject:
   m_ObjectHideFlags: 0

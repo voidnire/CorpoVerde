@@ -18,12 +18,13 @@ public class DamageNumberController : MonoBehaviour
         }
     }
 
-    public void CreateNumber(float value, Vector3 location)
+    public void CreateNumber(float value, Vector3 location, Color color)
     {
 
         DamageNumber damageNumber = Instantiate(prefab, location, Quaternion.identity, transform);
 
         damageNumber.SetValue(value);
+        damageNumber.SetColor(color);
 
     }
 }

@@ -23,4 +23,9 @@ public class DamageNumber : MonoBehaviour
         damageText.text = value.ToString();
     }
 
+    public void SetColor(Color color)
+    {
+        damageText.color = color;
+    }
+
 }

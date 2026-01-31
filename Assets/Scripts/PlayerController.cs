@@ -14,9 +14,9 @@ public class PlayerController : MonoBehaviour
 
     [SerializeField] private Animator animator;
 
-    //private bool isImmune;
-    //[SerializeField] private float immunityDuration = 1f;
-    //[SerializeField] private float immunityTimer;
+    private bool isImmune;
+    [SerializeField] private float immunityDuration = 2f;
+    [SerializeField] private float immunityTimer;
 
     private Collectible collectibleNearby;
     private PlayerInventory inventory;
@@ -24,6 +24,7 @@ public class PlayerController : MonoBehaviour
     void Start()
     {
         playerCurrentHealth = playerMaxHealth;
+        UIController.Instance.UpdateHealthSlider();
         Debug.Log("PlayerController está em: " + gameObject.name);
 
         inventory = GetComponent<PlayerInventory>();
@@ -66,11 +67,11 @@ public class PlayerController : MonoBehaviour
         } 
         /*      ANIMAÇÃO     */ 
         
-        /* IMUNIDADE 
+        /* IMUNIDADE */
         if(immunityTimer > 0)
             immunityTimer -= Time.deltaTime;
         else
-            isImmune = false;*/
+            isImmune = false;
 
         if (collectibleNearby != null && Input.GetKeyDown(KeyCode.E))
         {
@@ -99,7 +100,7 @@ public class PlayerController : MonoBehaviour
 
     public void TakeDamage(float damageAmount)
     {
-        playerCurrentHealth -= damageAmount;
+       /* playerCurrentHealth -= damageAmount;
         Debug.LogError(Debug.unityLogger.logHandler.GetType() + " Player Health: " + playerCurrentHealth);
         UIController.Instance.UpdateHealthSlider();
         if (playerCurrentHealth <= 0)
@@ -107,16 +108,17 @@ public class PlayerController : MonoBehaviour
             gameObject.SetActive(false);
             Debug.Log("Player Died");
             GameManager.Instance.GameOver();
-        }
-        /*
+        }*/
+        
         if (!isImmune)
         {
             Debug.LogError(" PLAYER TOMOU DANO");
             isImmune = true;
             immunityTimer = immunityDuration;
 
+            DamageNumberController.Instance.CreateNumber(damageAmount, transform.position, Color.red);
             playerCurrentHealth -= damageAmount;
-            Debug.Log(Debug.unityLogger.logHandler.GetType() + " Player Health: " + playerCurrentHealth);
+
             UIController.Instance.UpdateHealthSlider();
             if (playerCurrentHealth <= 0)
             {
@@ -124,7 +126,7 @@ public class PlayerController : MonoBehaviour
                 Debug.Log("Player Died");
                 GameManager.Instance.GameOver();
             }
-        }*/
+        }
     }
     void OnTriggerEnter2D(Collider2D other)
     {

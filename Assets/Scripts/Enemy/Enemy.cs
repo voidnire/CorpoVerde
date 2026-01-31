@@ -38,27 +38,29 @@ public class Enemy : MonoBehaviour
         }           
     }
 
-    private void OnCollisionStay2D(Collision2D collision)
+    void OnCollisionStay2D(Collision2D collision)
     {
         if(collision.gameObject.CompareTag("Player"))
         {
-            
+            //Destroy(gameObject);
             PlayerController.Instance.TakeDamage(damage);
         }
     }
 
-    private void OnCollisionEnter2D(Collision2D collision)
+    /*private void OnCollisionEnter2D(Collision2D collision)
     {
         rb.linearVelocity = Vector2.zero;
         spriteRenderer.flipX = false;
 
-    }
+    }*/
 
     public void TakeDamage(float damageAmount)
     {
         health -= damageAmount;
 
-        DamageNumberController.Instance.CreateNumber(damageAmount, transform.position);
+        DamageNumberController.Instance.CreateNumber(damageAmount, transform.position, Color.green);
+
+
 
         if  (health <= 0)
         {
