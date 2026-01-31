@@ -14,9 +14,9 @@ public class PlayerController : MonoBehaviour
 
     [SerializeField] private Animator animator;
 
-    private bool isImmune;
-    [SerializeField] private float immunityDuration = 1f;
-    [SerializeField] private float immunityTimer;
+    //private bool isImmune;
+    //[SerializeField] private float immunityDuration = 1f;
+    //[SerializeField] private float immunityTimer;
 
     private Collectible collectibleNearby;
     private PlayerInventory inventory;
@@ -66,10 +66,11 @@ public class PlayerController : MonoBehaviour
         } 
         /*      ANIMAÇÃO     */ 
         
+        /* IMUNIDADE 
         if(immunityTimer > 0)
             immunityTimer -= Time.deltaTime;
         else
-            isImmune = false;
+            isImmune = false;*/
 
         if (collectibleNearby != null && Input.GetKeyDown(KeyCode.E))
         {
@@ -98,12 +99,24 @@ public class PlayerController : MonoBehaviour
 
     public void TakeDamage(float damageAmount)
     {
+        playerCurrentHealth -= damageAmount;
+        Debug.LogError(Debug.unityLogger.logHandler.GetType() + " Player Health: " + playerCurrentHealth);
+        UIController.Instance.UpdateHealthSlider();
+        if (playerCurrentHealth <= 0)
+        {
+            gameObject.SetActive(false);
+            Debug.Log("Player Died");
+            GameManager.Instance.GameOver();
+        }
+        /*
         if (!isImmune)
         {
+            Debug.LogError(" PLAYER TOMOU DANO");
             isImmune = true;
             immunityTimer = immunityDuration;
 
             playerCurrentHealth -= damageAmount;
+            Debug.Log(Debug.unityLogger.logHandler.GetType() + " Player Health: " + playerCurrentHealth);
             UIController.Instance.UpdateHealthSlider();
             if (playerCurrentHealth <= 0)
             {
@@ -111,7 +124,7 @@ public class PlayerController : MonoBehaviour
                 Debug.Log("Player Died");
                 GameManager.Instance.GameOver();
             }
-        }
+        }*/
     }
     void OnTriggerEnter2D(Collider2D other)
     {

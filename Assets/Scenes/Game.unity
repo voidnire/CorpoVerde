@@ -407,6 +407,63 @@ Transform:
   - {fileID: 272001812}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &220116810
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 651950778180840219, guid: acced74f8f0f9e24b9be2bdac418c36d, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 2.8994372
+      objectReference: {fileID: 0}
+    - target: {fileID: 651950778180840219, guid: acced74f8f0f9e24b9be2bdac418c36d, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -1.065527
+      objectReference: {fileID: 0}
+    - target: {fileID: 651950778180840219, guid: acced74f8f0f9e24b9be2bdac418c36d, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 651950778180840219, guid: acced74f8f0f9e24b9be2bdac418c36d, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 651950778180840219, guid: acced74f8f0f9e24b9be2bdac418c36d, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 651950778180840219, guid: acced74f8f0f9e24b9be2bdac418c36d, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 651950778180840219, guid: acced74f8f0f9e24b9be2bdac418c36d, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 651950778180840219, guid: acced74f8f0f9e24b9be2bdac418c36d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 651950778180840219, guid: acced74f8f0f9e24b9be2bdac418c36d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 651950778180840219, guid: acced74f8f0f9e24b9be2bdac418c36d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5478868985386991659, guid: acced74f8f0f9e24b9be2bdac418c36d, type: 3}
+      propertyPath: m_Name
+      value: Garimpeiro2
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: acced74f8f0f9e24b9be2bdac418c36d, type: 3}
 --- !u!4 &272001812 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2550572695607889467, guid: a54a7d716d8fd154483e34bd656d906b, type: 3}
@@ -1889,8 +1946,8 @@ TilemapRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: -1324608315
+  m_SortingLayer: 3
   m_SortingOrder: 0
   m_ChunkSize: {x: 32, y: 32, z: 32}
   m_ChunkCullingBounds: {x: 0, y: 0, z: 0}
@@ -2812,8 +2869,8 @@ TilemapRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: -1324608315
+  m_SortingLayer: 3
   m_SortingOrder: 0
   m_ChunkSize: {x: 32, y: 32, z: 32}
   m_ChunkCullingBounds: {x: 0, y: 0, z: 0}
@@ -3283,8 +3340,8 @@ TilemapRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: -1674718431
+  m_SortingLayer: 1
   m_SortingOrder: 0
   m_ChunkSize: {x: 32, y: 32, z: 32}
   m_ChunkCullingBounds: {x: 0.015625, y: 0, z: 0}
@@ -102634,3 +102691,4 @@ SceneRoots:
   - {fileID: 1164698569225637638}
   - {fileID: 1372499912}
   - {fileID: 1241807732}
+  - {fileID: 220116810}

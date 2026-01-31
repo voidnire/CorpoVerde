@@ -1,19 +1,19 @@
 fileFormatVersion: 2
-guid: 5d4787ec5d411e94a9f934fed6616510
+guid: 5faaaa78d057ef7489fd4c2ac6e95627
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -278307461538478916
-    second: garimpeiro2IDLE_0
+      213: 2349135047088800348
+    second: garimpeiro1IDLEATAQUE_0
   - first:
-      213: -5122795891660783241
-    second: garimpeiro2IDLE_1
+      213: 2046982906384037701
+    second: garimpeiro1IDLEATAQUE_1
   - first:
-      213: -2420216794678812156
-    second: garimpeiro2IDLE_2
+      213: 7781544561341227091
+    second: garimpeiro1IDLEATAQUE_2
   - first:
-      213: -1256193138407113409
-    second: garimpeiro2IDLE_3
+      213: -696327835197090315
+    second: garimpeiro1IDLEATAQUE_3
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -122,7 +122,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: garimpeiro2IDLE_0
+      name: garimpeiro1IDLEATAQUE_0
       rect:
         serializedVersion: 2
         x: 0
@@ -137,14 +137,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: cb488a896d0432cf0800000000000000
-      internalID: -278307461538478916
+      spriteID: c52062b01edc99020800000000000000
+      internalID: 2349135047088800348
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: garimpeiro2IDLE_1
+      name: garimpeiro1IDLEATAQUE_1
       rect:
         serializedVersion: 2
         x: 32
@@ -159,14 +159,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 7718abc374c28e8b0800000000000000
-      internalID: -5122795891660783241
+      spriteID: 5473154ab18586c10800000000000000
+      internalID: 2046982906384037701
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: garimpeiro2IDLE_2
+      name: garimpeiro1IDLEATAQUE_2
       rect:
         serializedVersion: 2
         x: 64
@@ -181,14 +181,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 4022cb9e5a9a96ed0800000000000000
-      internalID: -2420216794678812156
+      spriteID: 350ed96dc899dfb60800000000000000
+      internalID: 7781544561341227091
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: garimpeiro2IDLE_3
+      name: garimpeiro1IDLEATAQUE_3
       rect:
         serializedVersion: 2
         x: 96
@@ -203,8 +203,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: f3df5f70ffa119ee0800000000000000
-      internalID: -1256193138407113409
+      spriteID: 5f55cdfe5852656f0800000000000000
+      internalID: -696327835197090315
       vertices: []
       indices: 
       edges: []
@@ -213,7 +213,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 7ea96d8d2fedc5745ae5664d5ddc5daf
+    spriteID: 3d47f69066865bf4d91451a35447beff
     internalID: 0
     vertices: []
     indices: 
@@ -223,10 +223,10 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      garimpeiro2IDLE_0: -278307461538478916
-      garimpeiro2IDLE_1: -5122795891660783241
-      garimpeiro2IDLE_2: -2420216794678812156
-      garimpeiro2IDLE_3: -1256193138407113409
+      garimpeiro1IDLEATAQUE_0: 2349135047088800348
+      garimpeiro1IDLEATAQUE_1: 2046982906384037701
+      garimpeiro1IDLEATAQUE_2: 7781544561341227091
+      garimpeiro1IDLEATAQUE_3: -696327835197090315
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

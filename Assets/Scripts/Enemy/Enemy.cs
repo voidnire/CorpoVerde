@@ -42,9 +42,16 @@ public class Enemy : MonoBehaviour
     {
         if(collision.gameObject.CompareTag("Player"))
         {
+            
             PlayerController.Instance.TakeDamage(damage);
-            //PlayerController.Instance.ChangeHealth(-1);
         }
+    }
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        rb.linearVelocity = Vector2.zero;
+        spriteRenderer.flipX = false;
+
     }
 
     public void TakeDamage(float damageAmount)
