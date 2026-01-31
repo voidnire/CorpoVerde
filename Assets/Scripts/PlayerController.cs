@@ -43,25 +43,29 @@ public class PlayerController : MonoBehaviour
             Instance = this; 
     }
 
+
+
+
     void Update()
     {
         float inputX = Input.GetAxisRaw("Horizontal");
         float inputY = Input.GetAxisRaw("Vertical");
-        playerMoveDirection = new Vector2(inputX, inputY).normalized;
+        playerMoveDirection = new Vector3(inputX, inputY).normalized;
 
-        /*      ANIMAÇÃO     
-        animator.SetFloat("moveX", inputX);
-        animator.SetFloat("moveY", inputY);
+        FlipCharacterX(playerMoveDirection);
 
-        if(playerMoveDirection == Vector3.zero)
+
+        /*      ANIMAÇÃO    */
+        if (playerMoveDirection == Vector3.zero)
         {
-            animator.SetBool("isMoving", false); //POR ESSE BOOL LÁ
+            animator.SetBool("isMoving", false);
         }
         else
         {
             animator.SetBool("isMoving", true);
-        } */
-
+        } 
+        /*      ANIMAÇÃO     */ 
+        
         if(immunityTimer > 0)
             immunityTimer -= Time.deltaTime;
         else
@@ -71,6 +75,18 @@ public class PlayerController : MonoBehaviour
         {
             collectibleNearby.Collect(inventory);
             collectibleNearby = null;
+        }
+    }
+
+    private void FlipCharacterX(Vector3 playerMoveDirection)
+    {
+        if (playerMoveDirection.x > 0)
+        {
+            transform.localScale = new Vector3(1, 1, 1);
+        }
+        else if (playerMoveDirection.x < 0)
+        {
+            transform.localScale = new Vector3(-1, 1, 1);
         }
     }
 

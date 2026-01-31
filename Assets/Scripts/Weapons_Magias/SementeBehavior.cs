@@ -6,7 +6,7 @@ public class SementeBehavior : MonoBehaviour
     [SerializeField] private float speed = 10f;
     [SerializeField] private float destroyTime = 3f;
     [SerializeField] private LayerMask whatDestroysBullet;
-    [SerializeField] private int damage = 10;
+    [SerializeField] private int damage = 5;
 
     private bool destroyed;
     private void Start()

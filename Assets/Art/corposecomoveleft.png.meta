@@ -1,25 +1,31 @@
 fileFormatVersion: 2
-guid: 240398f68f7eee342a877934d202aa1e
+guid: 50ce19651c7a727439023603a55669be
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 2663683252968471978
-    second: corposecoidle 1_0
+      213: 4767035388755618993
+    second: corposeco_0
   - first:
-      213: -4661181553201092121
-    second: corposecoidle 1_1
+      213: -4293199568876476067
+    second: corposeco_1
   - first:
-      213: -1282753280968574734
-    second: corposecoidle 1_2
+      213: -6170105204658081425
+    second: corposeco_2
   - first:
-      213: -8272145816440887539
-    second: corposecoidle 1_3
+      213: -473383015128908697
+    second: corposeco_3
   - first:
-      213: 6771274416514636842
-    second: corposecoidle 1_4
+      213: 519650216183837067
+    second: corposeco_4
   - first:
-      213: 8774749695459399450
-    second: corposecoidle 1_5
+      213: -7009608314770928948
+    second: corposeco_5
+  - first:
+      213: 4853842770382818242
+    second: corposeco_6
+  - first:
+      213: 7654284272006445635
+    second: corposeco_7
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -52,7 +58,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -66,7 +72,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 32
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -90,7 +96,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -128,12 +134,12 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: corposecoidle 1_0
+      name: corposecomoveleft_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 33
+        width: 32
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -141,43 +147,43 @@ TextureImporter:
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: aadb7574ecd47f420800000000000000
-      internalID: 2663683252968471978
+      spriteID: 9e0ff2de6f259c049bafbe4804333f63
+      internalID: -2066681050
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: corposecoidle 1_1
+      name: corposecomoveleft_1
       rect:
         serializedVersion: 2
-        x: 31
+        x: 32
         y: 0
-        width: 33
-        height: 63
+        width: 32
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 7e968d7c218205fb0800000000000000
-      internalID: -4661181553201092121
+      spriteID: f50344e89cb600e418862b666b194742
+      internalID: -1019619583
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: corposecoidle 1_2
+      name: corposecomoveleft_2
       rect:
         serializedVersion: 2
         x: 64
         y: 0
-        width: 33
+        width: 32
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -185,21 +191,21 @@ TextureImporter:
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 2f8b661ffaeb23ee0800000000000000
-      internalID: -1282753280968574734
+      spriteID: 8362bde2f17ad8a4db8bc49b098d09b2
+      internalID: -1789150850
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: corposecoidle 1_3
+      name: corposecomoveleft_3
       rect:
         serializedVersion: 2
         x: 96
         y: 0
-        width: 33
+        width: 32
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -207,38 +213,38 @@ TextureImporter:
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: d07aec8253f633d80800000000000000
-      internalID: -8272145816440887539
+      spriteID: 8a5b71fb480d8fe43bbd23001a150ccc
+      internalID: 1706279234
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: corposecoidle 1_4
+      name: corposecomoveleft_4
       rect:
         serializedVersion: 2
-        x: 129
+        x: 128
         y: 0
         width: 32
-        height: 63
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: a2c9b01c43668fd50800000000000000
-      internalID: 6771274416514636842
+      spriteID: 3945c040f817b8c4f81fe17414b512bb
+      internalID: -1857067926
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: corposecoidle 1_5
+      name: corposecomoveleft_5
       rect:
         serializedVersion: 2
         x: 160
@@ -251,10 +257,54 @@ TextureImporter:
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: a1713de7b5c26c970800000000000000
-      internalID: 8774749695459399450
+      spriteID: eb8bf8ff0b57c1347ae68b6b8a3dc7e5
+      internalID: 1682088525
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: corposecomoveleft_6
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 0
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 585f3497f70394d4b98fbbe86e3a8204
+      internalID: 1585145855
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: corposecomoveleft_7
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 0
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c84753368c19c99428fc429cf884fa49
+      internalID: -1924795647
       vertices: []
       indices: 
       edges: []
@@ -263,7 +313,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 57ded71080e0379439bccba27e6c0ab8
     internalID: 0
     vertices: []
     indices: 
@@ -273,12 +323,14 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      corposecoidle 1_0: 2663683252968471978
-      corposecoidle 1_1: -4661181553201092121
-      corposecoidle 1_2: -1282753280968574734
-      corposecoidle 1_3: -8272145816440887539
-      corposecoidle 1_4: 6771274416514636842
-      corposecoidle 1_5: 8774749695459399450
+      corposecomoveleft_0: -2066681050
+      corposecomoveleft_1: -1019619583
+      corposecomoveleft_2: -1789150850
+      corposecomoveleft_3: 1706279234
+      corposecomoveleft_4: -1857067926
+      corposecomoveleft_5: 1682088525
+      corposecomoveleft_6: 1585145855
+      corposecomoveleft_7: -1924795647
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

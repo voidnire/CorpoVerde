@@ -50,6 +50,9 @@ public class Enemy : MonoBehaviour
     public void TakeDamage(float damageAmount)
     {
         health -= damageAmount;
+
+        DamageNumberController.Instance.CreateNumber(damageAmount, transform.position);
+
         if  (health <= 0)
         {
             Destroy(gameObject); //MORRE
