@@ -137,6 +137,7 @@ MonoBehaviour:
   destroyEffect: {fileID: 6756514064541427606, guid: 014a830eac2e846409e34885cbb29cec, type: 3}
   damage: 15
   health: 20
+  animator: {fileID: 1508695626189684937}
 --- !u!95 &1508695626189684937
 Animator:
   serializedVersion: 7

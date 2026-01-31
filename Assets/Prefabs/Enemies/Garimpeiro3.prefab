@@ -224,6 +224,7 @@ MonoBehaviour:
   destroyEffect: {fileID: 6756514064541427606, guid: 014a830eac2e846409e34885cbb29cec, type: 3}
   damage: 8
   health: 10
+  animator: {fileID: 4241505732138224617}
 --- !u!95 &4241505732138224617
 Animator:
   serializedVersion: 7

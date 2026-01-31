@@ -11,6 +11,26 @@ public class Enemy : MonoBehaviour
     [SerializeField] private float damage = 5f;
     [SerializeField] private float health = 10f;
 
+    [SerializeField] private Animator animator;
+
+    [SerializeField] private float attackCooldown = 1.5f;
+    private float attackTimer;
+    private bool isCollidingWithPlayer = false;
+
+
+    void Update()
+    {
+        if (!isCollidingWithPlayer) return;
+
+        attackTimer -= Time.deltaTime;
+
+        if (attackTimer <= 0f)
+        {
+            Attack();
+            attackTimer = attackCooldown;
+        }
+    }
+
 
     void FixedUpdate()
     {
@@ -38,14 +58,31 @@ public class Enemy : MonoBehaviour
         }           
     }
 
-    void OnCollisionStay2D(Collision2D collision)
+    private void Attack()
     {
-        if(collision.gameObject.CompareTag("Player"))
+        animator.SetTrigger("isAttacking");
+        PlayerController.Instance.TakeDamage(damage);
+    }
+
+     void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.CompareTag("Player"))
         {
-            //Destroy(gameObject);
-            PlayerController.Instance.TakeDamage(damage);
+            isCollidingWithPlayer = true;
+            attackTimer = 0f; // ataca imediatamente ao encostar
         }
     }
+
+    void OnCollisionExit2D(Collision2D collision)
+    {
+        if (collision.gameObject.CompareTag("Player"))
+        {
+            isCollidingWithPlayer = false;
+            //animator.SetTrigger("isAttacking");
+        }
+    }
+
+ 
 
     /*private void OnCollisionEnter2D(Collision2D collision)
     {
