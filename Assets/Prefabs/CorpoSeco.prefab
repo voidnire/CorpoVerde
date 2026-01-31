@@ -10,7 +10,6 @@ GameObject:
   m_Component:
   - component: {fileID: 6223041346009594704}
   - component: {fileID: 428484350400648754}
-  - component: {fileID: 3091527086739096438}
   - component: {fileID: 7904116050187687017}
   - component: {fileID: 7704893647454562155}
   - component: {fileID: 6708388176757746071}
@@ -94,43 +93,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!70 &3091527086739096438
-CapsuleCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1779420676890988978}
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_ForceSendLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ForceReceiveLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ContactCaptureLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_CallbackLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_IsTrigger: 1
-  m_UsedByEffector: 0
-  m_CompositeOperation: 0
-  m_CompositeOrder: 0
-  m_Offset: {x: 0, y: 0}
-  m_Size: {x: 1, y: 2}
-  m_Direction: 0
 --- !u!50 &7904116050187687017
 Rigidbody2D:
   serializedVersion: 5
@@ -282,8 +244,6 @@ MonoBehaviour:
   playerMaxHealth: 100
   playerCurrentHealth: 0
   animator: {fileID: 0}
-  immunityDuration: 1
-  immunityTimer: 0
 --- !u!114 &1387503242945544677
 MonoBehaviour:
   m_ObjectHideFlags: 0
