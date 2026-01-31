@@ -1,0 +1,650 @@
+fileFormatVersion: 2
+guid: 84c577ab852ee324ab8c2056aa1494a3
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 4113804951846121120
+    second: tile_set_floresta-Sheet_0
+  - first:
+      213: -6269155550041517102
+    second: tile_set_floresta-Sheet_1
+  - first:
+      213: -6131507950576490415
+    second: tile_set_floresta-Sheet_2
+  - first:
+      213: 965470722925329461
+    second: tile_set_floresta-Sheet_3
+  - first:
+      213: -5889708689975665091
+    second: tile_set_floresta-Sheet_4
+  - first:
+      213: 1334487308812724707
+    second: tile_set_floresta-Sheet_5
+  - first:
+      213: 1661684035433114613
+    second: tile_set_floresta-Sheet_6
+  - first:
+      213: -6624260184941544713
+    second: tile_set_floresta-Sheet_7
+  - first:
+      213: 4075253766050515133
+    second: tile_set_floresta-Sheet_8
+  - first:
+      213: 8838438002900389083
+    second: tile_set_floresta-Sheet_9
+  - first:
+      213: 870236314713048454
+    second: tile_set_floresta-Sheet_10
+  - first:
+      213: -8316985957461646176
+    second: tile_set_floresta-Sheet_11
+  - first:
+      213: 9216245995035644067
+    second: tile_set_floresta-Sheet_12
+  - first:
+      213: 2304795668854049882
+    second: tile_set_floresta-Sheet_13
+  - first:
+      213: -8467586995250625138
+    second: tile_set_floresta-Sheet_14
+  - first:
+      213: 2113332014286123850
+    second: tile_set_floresta-Sheet_15
+  - first:
+      213: -8901150423690977358
+    second: tile_set_floresta-Sheet_16
+  - first:
+      213: -2564520329015123731
+    second: tile_set_floresta-Sheet_17
+  - first:
+      213: 6511645374422340794
+    second: tile_set_floresta-Sheet_18
+  - first:
+      213: 3502451973547567787
+    second: tile_set_floresta-Sheet_19
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 32
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WindowsStoreApps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: tile_set_floresta-Sheet_0
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 82
+        width: 34
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0aee70ececb271930800000000000000
+      internalID: 4113804951846121120
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tile_set_floresta-Sheet_1
+      rect:
+        serializedVersion: 2
+        x: 33
+        y: 98
+        width: 34
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2d35b1e1e3c7ff8a0800000000000000
+      internalID: -6269155550041517102
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tile_set_floresta-Sheet_2
+      rect:
+        serializedVersion: 2
+        x: 66
+        y: 82
+        width: 34
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 158a76c410288eaa0800000000000000
+      internalID: -6131507950576490415
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tile_set_floresta-Sheet_3
+      rect:
+        serializedVersion: 2
+        x: 110
+        y: 98
+        width: 34
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 53cf009d18a066d00800000000000000
+      internalID: 965470722925329461
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tile_set_floresta-Sheet_4
+      rect:
+        serializedVersion: 2
+        x: 149
+        y: 98
+        width: 34
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d3e1877c62d834ea0800000000000000
+      internalID: -5889708689975665091
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tile_set_floresta-Sheet_5
+      rect:
+        serializedVersion: 2
+        x: 193
+        y: 74
+        width: 66
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3e9ac0f032d058210800000000000000
+      internalID: 1334487308812724707
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tile_set_floresta-Sheet_6
+      rect:
+        serializedVersion: 2
+        x: 273
+        y: 90
+        width: 34
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5fbade483dc7f0710800000000000000
+      internalID: 1661684035433114613
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tile_set_floresta-Sheet_7
+      rect:
+        serializedVersion: 2
+        x: 33
+        y: 66
+        width: 34
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7fabbc86576e114a0800000000000000
+      internalID: -6624260184941544713
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tile_set_floresta-Sheet_8
+      rect:
+        serializedVersion: 2
+        x: 110
+        y: 66
+        width: 34
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: db8830765b53e8830800000000000000
+      internalID: 4075253766050515133
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tile_set_floresta-Sheet_9
+      rect:
+        serializedVersion: 2
+        x: 149
+        y: 66
+        width: 34
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bdcc03c198078aa70800000000000000
+      internalID: 8838438002900389083
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tile_set_floresta-Sheet_10
+      rect:
+        serializedVersion: 2
+        x: 33
+        y: 34
+        width: 34
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 685cd194153b31c00800000000000000
+      internalID: 870236314713048454
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tile_set_floresta-Sheet_11
+      rect:
+        serializedVersion: 2
+        x: 111
+        y: 34
+        width: 34
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0a426934651249c80800000000000000
+      internalID: -8316985957461646176
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tile_set_floresta-Sheet_12
+      rect:
+        serializedVersion: 2
+        x: 149
+        y: 34
+        width: 34
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3a057b817eea6ef70800000000000000
+      internalID: 9216245995035644067
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tile_set_floresta-Sheet_13
+      rect:
+        serializedVersion: 2
+        x: 193
+        y: 26
+        width: 66
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a5c87e113774cff10800000000000000
+      internalID: 2304795668854049882
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tile_set_floresta-Sheet_14
+      rect:
+        serializedVersion: 2
+        x: 274
+        y: 42
+        width: 34
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e858e53bd761d7a80800000000000000
+      internalID: -8467586995250625138
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tile_set_floresta-Sheet_15
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 18
+        width: 34
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a433cf32540145d10800000000000000
+      internalID: 2113332014286123850
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tile_set_floresta-Sheet_16
+      rect:
+        serializedVersion: 2
+        x: 33
+        y: 2
+        width: 34
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2bfd49799d2c87480800000000000000
+      internalID: -8901150423690977358
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tile_set_floresta-Sheet_17
+      rect:
+        serializedVersion: 2
+        x: 65
+        y: 18
+        width: 34
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: de029c1295ef86cd0800000000000000
+      internalID: -2564520329015123731
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tile_set_floresta-Sheet_18
+      rect:
+        serializedVersion: 2
+        x: 111
+        y: 2
+        width: 34
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ab452c5c7f20e5a50800000000000000
+      internalID: 6511645374422340794
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tile_set_floresta-Sheet_19
+      rect:
+        serializedVersion: 2
+        x: 149
+        y: 2
+        width: 34
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: baa2b2e53853b9030800000000000000
+      internalID: 3502451973547567787
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      tile_set_floresta-Sheet_0: 4113804951846121120
+      tile_set_floresta-Sheet_1: -6269155550041517102
+      tile_set_floresta-Sheet_10: 870236314713048454
+      tile_set_floresta-Sheet_11: -8316985957461646176
+      tile_set_floresta-Sheet_12: 9216245995035644067
+      tile_set_floresta-Sheet_13: 2304795668854049882
+      tile_set_floresta-Sheet_14: -8467586995250625138
+      tile_set_floresta-Sheet_15: 2113332014286123850
+      tile_set_floresta-Sheet_16: -8901150423690977358
+      tile_set_floresta-Sheet_17: -2564520329015123731
+      tile_set_floresta-Sheet_18: 6511645374422340794
+      tile_set_floresta-Sheet_19: 3502451973547567787
+      tile_set_floresta-Sheet_2: -6131507950576490415
+      tile_set_floresta-Sheet_3: 965470722925329461
+      tile_set_floresta-Sheet_4: -5889708689975665091
+      tile_set_floresta-Sheet_5: 1334487308812724707
+      tile_set_floresta-Sheet_6: 1661684035433114613
+      tile_set_floresta-Sheet_7: -6624260184941544713
+      tile_set_floresta-Sheet_8: 4075253766050515133
+      tile_set_floresta-Sheet_9: 8838438002900389083
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

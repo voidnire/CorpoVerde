@@ -97,11 +97,9 @@ public class PlayerController : MonoBehaviour
 
     public void TakeDamage(float damageAmount)
     {
-
-        
         if (!isImmune)
         {
-            Debug.LogError(" PLAYER TOMOU DANO");
+            Debug.Log(" PLAYER TOMOU DANO");
             isImmune = true;
             immunityTimer = immunityDuration;
 
@@ -121,7 +119,7 @@ public class PlayerController : MonoBehaviour
     {
         if (other.CompareTag("Collectible"))
         {
-            Debug.LogError("Collectible nearby");
+            Debug.Log("Collectible nearby");
             collectibleNearby = other.GetComponent<Collectible>();
             UXController.Instance.CreateCollectPrompt(transform.position);
         }
