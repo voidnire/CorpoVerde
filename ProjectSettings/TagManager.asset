@@ -7,6 +7,7 @@ TagManager:
   - Enemy
   - Semente
   - Collectible
+  - UI
   layers:
   - Default
   - TransparentFX

@@ -246,6 +246,8 @@ MonoBehaviour:
   playerMaxHealth: 100
   playerCurrentHealth: 0
   animator: {fileID: 8657870112393687528}
+  immunityDuration: 1
+  immunityTimer: 0
 --- !u!114 &1387503242945544677
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -357,7 +359,7 @@ Transform:
   m_GameObject: {fileID: 4733484176205199568}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0.9359478, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:

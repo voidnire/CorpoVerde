@@ -44,9 +44,6 @@ public class PlayerController : MonoBehaviour
             Instance = this; 
     }
 
-
-
-
     void Update()
     {
         float inputX = Input.GetAxisRaw("Horizontal");
@@ -100,15 +97,7 @@ public class PlayerController : MonoBehaviour
 
     public void TakeDamage(float damageAmount)
     {
-       /* playerCurrentHealth -= damageAmount;
-        Debug.LogError(Debug.unityLogger.logHandler.GetType() + " Player Health: " + playerCurrentHealth);
-        UIController.Instance.UpdateHealthSlider();
-        if (playerCurrentHealth <= 0)
-        {
-            gameObject.SetActive(false);
-            Debug.Log("Player Died");
-            GameManager.Instance.GameOver();
-        }*/
+
         
         if (!isImmune)
         {
@@ -132,15 +121,19 @@ public class PlayerController : MonoBehaviour
     {
         if (other.CompareTag("Collectible"))
         {
+            Debug.LogError("Collectible nearby");
             collectibleNearby = other.GetComponent<Collectible>();
+            UXController.Instance.CreateCollectPrompt(transform.position);
         }
     }
 
-    void OnTriggerExit2D(Collider2D other)
+    /*void OnTriggerExit2D(Collider2D other)
     {
         if (other.CompareTag("Collectible"))
         {
             collectibleNearby = null;
+            UXController.Instance.HideCollectPrompt();
+
         }
-    }
+    }*/
 }
