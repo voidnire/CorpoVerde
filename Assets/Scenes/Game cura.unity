@@ -84565,6 +84565,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   latexText: {fileID: 969571498}
   frutasText: {fileID: 1704568409}
+  expText: {fileID: 0}
 --- !u!1001 &1823133049
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -85018,6 +85019,14 @@ PrefabInstance:
     - target: {fileID: 5774412558386453727, guid: 2ed0128d95ba8be4d9ae2f668a6b43f2, type: 3}
       propertyPath: m_Name
       value: cuia
+      objectReference: {fileID: 0}
+    - target: {fileID: 6569362896985047042, guid: 2ed0128d95ba8be4d9ae2f668a6b43f2, type: 3}
+      propertyPath: alphaMinimo
+      value: 0.4
+      objectReference: {fileID: 0}
+    - target: {fileID: 6569362896985047042, guid: 2ed0128d95ba8be4d9ae2f668a6b43f2, type: 3}
+      propertyPath: velocidadePulso
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
