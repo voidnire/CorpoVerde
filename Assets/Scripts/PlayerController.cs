@@ -26,13 +26,16 @@ public class PlayerController : MonoBehaviour
     void Start()
     {
         playerCurrentHealth = playerMaxHealth;
+
         UIController.Instance.UpdateHealthSlider();
-        Debug.Log("PlayerController está em: " + gameObject.name);
+        UIItensController.Instance.UpdateLatexText(0);
+
+        UIItensController.Instance.UpdateFrutasText(0);
 
         inventory = GetComponent<PlayerInventory>();
 
         if (inventory == null)
-            Debug.LogError(" PlayerInventory NÃO está neste GameObject");
+            Debug.LogError("PlayerInventory NÃO está neste GameObject");
         else
             Debug.Log(" PlayerInventory encontrado");
     }
@@ -74,6 +77,7 @@ public class PlayerController : MonoBehaviour
 
         if (collectibleNearby != null && Input.GetKeyDown(KeyCode.E))
         {
+            Debug.Log("COLETAANDO ITEM....");
             collectibleNearby.Collect(inventory);
             collectibleNearby = null;
         }
