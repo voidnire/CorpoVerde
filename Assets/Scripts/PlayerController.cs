@@ -12,6 +12,8 @@ public class PlayerController : MonoBehaviour
     public float playerMaxHealth = 100;
     public float playerCurrentHealth;
 
+    [SerializeField] private float healingAmount = 20f;
+
     [SerializeField] private Animator animator;
 
     private bool isImmune;
@@ -129,6 +131,23 @@ public class PlayerController : MonoBehaviour
             collectibleNearby = other.GetComponent<Collectible>();
             UXController.Instance.CreateCollectPrompt(transform.position);
         }
+
+        if (other.CompareTag("Cura"))
+        {
+            Heal(healingAmount);
+            Destroy(other.gameObject);
+        }
+    }
+
+    public void Heal(float healAmount)
+    {
+        playerCurrentHealth += healAmount;
+        if (playerCurrentHealth > playerMaxHealth)
+        {
+            playerCurrentHealth = playerMaxHealth;
+        }
+        UIController.Instance.UpdateHealthSlider();
+        //DamageNumberController.Instance.CreateNumber(healAmount, transform.position, Color.green);
     }
 
     public void GetExperience(int experienceToGet)
