@@ -35,7 +35,6 @@ public class SementeBehavior : MonoBehaviour
 
         if (collision.CompareTag("Enemy"))
         {
-            Debug.Log("Semente hit an enemy!");
             Enemy enemy = collision.GetComponent<Enemy>();
             if (enemy != null)
                 enemy.TakeDamage(damage);
