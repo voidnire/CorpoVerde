@@ -11,11 +11,18 @@ public class Enemy : MonoBehaviour
     [SerializeField] private float damage = 5f;
     [SerializeField] private float health = 10f;
 
+    [SerializeField] private int experienceToGive;
+
     [SerializeField] private Animator animator;
+
+    [SerializeField] private float pushTime;
+    private float pushCounter;
 
     [SerializeField] private float attackCooldown = 1.5f;
     private float attackTimer;
     private bool isCollidingWithPlayer = false;
+
+    
 
 
     void Update()
@@ -47,6 +54,19 @@ public class Enemy : MonoBehaviour
             {
                 spriteRenderer.flipX = false;
             }
+            // push back
+            if(pushCounter > 0)
+            {
+                pushCounter -= Time.fixedDeltaTime;
+                if(moveSpeed > 0){
+                    moveSpeed = -moveSpeed;
+                }
+                
+            } else
+            {
+                moveSpeed = Mathf.Abs(moveSpeed);
+            }
+
             //move towards the player
             direction = (PlayerController.Instance.transform.position -
                 transform.position).normalized;
@@ -82,7 +102,6 @@ public class Enemy : MonoBehaviour
         }
     }
 
- 
 
     /*private void OnCollisionEnter2D(Collision2D collision)
     {
@@ -97,12 +116,14 @@ public class Enemy : MonoBehaviour
 
         DamageNumberController.Instance.CreateNumber(damageAmount, transform.position, Color.green);
 
+        pushCounter = pushTime;
 
 
         if  (health <= 0)
         {
             Destroy(gameObject); //MORRE
             Instantiate(destroyEffect, transform.position, transform.rotation); //copy do prefab de destroy
+            PlayerController.Instance.GetExperience(experienceToGive);
         }
     }
 

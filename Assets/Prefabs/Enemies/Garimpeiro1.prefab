@@ -245,8 +245,11 @@ MonoBehaviour:
   moveSpeed: 2
   destroyEffect: {fileID: 6756514064541427606, guid: 014a830eac2e846409e34885cbb29cec, type: 3}
   damage: 5
-  health: 10
+  health: 30
+  experienceToGive: 5
   animator: {fileID: 3634058924423288075}
+  pushTime: 0.5
+  attackCooldown: 1.5
 --- !u!70 &6831861529824172679
 CapsuleCollider2D:
   m_ObjectHideFlags: 0

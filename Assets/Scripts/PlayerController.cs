@@ -21,6 +21,8 @@ public class PlayerController : MonoBehaviour
     private Collectible collectibleNearby;
     private PlayerInventory inventory;
 
+    public int experience;
+
     void Start()
     {
         playerCurrentHealth = playerMaxHealth;
@@ -123,6 +125,11 @@ public class PlayerController : MonoBehaviour
             collectibleNearby = other.GetComponent<Collectible>();
             UXController.Instance.CreateCollectPrompt(transform.position);
         }
+    }
+
+    public void GetExperience(int experienceToGet)
+    {
+        experience += experienceToGet;
     }
 
     /*void OnTriggerExit2D(Collider2D other)
