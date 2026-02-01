@@ -6,6 +6,7 @@ public class UIItensController : MonoBehaviour
     public static UIItensController Instance;
     [SerializeField] private TMP_Text latexText;
     [SerializeField] private TMP_Text frutasText;
+    [SerializeField] private TMP_Text expText;
     void Awake()
     {
         if (Instance == null)
@@ -25,5 +26,9 @@ public class UIItensController : MonoBehaviour
     public void UpdateFrutasText(int amount)
     {
         frutasText.text = amount.ToString();
+    }
+    public void UpdateExpText(int amount)
+    {
+        expText.text = amount.ToString();
     }
 }
