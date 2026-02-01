@@ -21,9 +21,13 @@ public class Enemy : MonoBehaviour
     [SerializeField] private float attackCooldown = 1.5f;
     private float attackTimer;
     private bool isCollidingWithPlayer = false;
+    private bool canMove = false;
 
-    
-
+    private void Start()
+    {
+        animator.SetBool("isMoving", false);
+        canMove = true;
+}
 
     void Update()
     {
@@ -33,9 +37,12 @@ public class Enemy : MonoBehaviour
 
         if (attackTimer <= 0f)
         {
+            animator.SetBool("isMoving", false);
             Attack();
             attackTimer = attackCooldown;
         }
+        animator.SetBool("isMoving", true);
+        
     }
 
 
@@ -58,28 +65,37 @@ public class Enemy : MonoBehaviour
             if(pushCounter > 0)
             {
                 pushCounter -= Time.fixedDeltaTime;
-                if(moveSpeed > 0){
+                animator.SetBool("isMoving", false);
+
+                if (moveSpeed > 0){
                     moveSpeed = -moveSpeed;
                 }
-                
             } else
             {
                 moveSpeed = Mathf.Abs(moveSpeed);
             }
 
             //move towards the player
+            if (canMove == true)
+            {
+                animator.SetBool("isMoving", true);
+            }
+            
             direction = (PlayerController.Instance.transform.position -
                 transform.position).normalized;
             rb.linearVelocity = new Vector2(direction.x * moveSpeed, direction.y * moveSpeed);
         }
         else // se não tiver player
         {
+            animator.SetBool("isMoving", false);
+            canMove = false;
             rb.linearVelocity = Vector2.zero; // inimigo para de andar 
         }           
     }
 
     private void Attack()
     {
+        canMove = false;
         animator.SetTrigger("isAttacking");
         PlayerController.Instance.TakeDamage(damage);
     }
@@ -89,15 +105,21 @@ public class Enemy : MonoBehaviour
         if (collision.gameObject.CompareTag("Player"))
         {
             isCollidingWithPlayer = true;
+            animator.SetBool("isMoving", false);
+            canMove = false;
             attackTimer = 0f; // ataca imediatamente ao encostar
         }
     }
+
+ 
 
     void OnCollisionExit2D(Collision2D collision)
     {
         if (collision.gameObject.CompareTag("Player"))
         {
             isCollidingWithPlayer = false;
+            //animator.SetBool("isMoving", true);
+            canMove = true;
             //animator.SetTrigger("isAttacking");
         }
     }
