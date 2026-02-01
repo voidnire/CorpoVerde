@@ -137,7 +137,7 @@ MonoBehaviour:
   destroyEffect: {fileID: 6756514064541427606, guid: 014a830eac2e846409e34885cbb29cec, type: 3}
   damage: 15
   health: 40
-  experienceToGive: 15
+  experienceToGive: 30
   animator: {fileID: 1508695626189684937}
   pushTime: 0.3
   attackCooldown: 1.5

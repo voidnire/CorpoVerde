@@ -27,6 +27,7 @@ public class PlayerController : MonoBehaviour
     {
         playerCurrentHealth = playerMaxHealth;
 
+        UIItensController.Instance.UpdateExpText(0);
         UIController.Instance.UpdateHealthSlider();
         UIItensController.Instance.UpdateLatexText(0);
 
@@ -134,6 +135,7 @@ public class PlayerController : MonoBehaviour
     public void GetExperience(int experienceToGet)
     {
         experience += experienceToGet;
+        UIItensController.Instance.UpdateExpText(experience);
     }
 
     /*void OnTriggerExit2D(Collider2D other)
