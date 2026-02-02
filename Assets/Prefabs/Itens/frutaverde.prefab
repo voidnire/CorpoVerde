@@ -139,3 +139,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   itemType: 1
+  velocidade: 2
+  alphaMinimo: 0.5
+  intensidadeGlow: 1.5

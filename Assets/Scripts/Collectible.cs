@@ -5,46 +5,45 @@ public class Collectible : MonoBehaviour
     public ItemType itemType;
 
     [Header("Configurações de Brilho")]
-    [SerializeField] private float velocidadePulso = 2f;
-    [SerializeField] private float alphaMinimo = 0.3f; // 30% (diminui até aqui)
-    [SerializeField] private float alphaMaximo = 1f;   // 100% (aumenta até aqui)
+    public float velocidade = 2f;
+    public float alphaMinimo = 0.5f;
+    public float intensidadeGlow = 2.0f; // Aumente para brilhar mais
 
-    private Material materialItem;
-    private static readonly int PropriedadeAlpha = Shader.PropertyToID("_Alpha"); // Nome da variável no Shader
+    private SpriteRenderer spriteRenderer;
+    private Color corOriginal;
 
     void Start()
     {
-        // Pega o material do objeto. 
-        // Se o outline for o segundo material, use: GetComponent<Renderer>().materials[1];
-        materialItem = GetComponent<Renderer>().material;
+        spriteRenderer = GetComponent<SpriteRenderer>();
+        corOriginal = spriteRenderer.color;
     }
 
     void Update()
     {
-        // Cria um valor que vai e volta entre os limites
-        float alpha = Mathf.Lerp(alphaMinimo, alphaMaximo, Mathf.PingPong(Time.time * velocidadePulso, 1));
+        // Cria o efeito de vai e vem (0 a 1)
+        float oscilacao = Mathf.PingPong(Time.time * velocidade, 1f);
+        float novoAlpha = Mathf.Lerp(alphaMinimo, 1f, oscilacao);
 
-        // Aplica ao material
-        // Se for um Shader comum, usa "_Color". Se for o seu Shader Graph, use o nome da variável que você criou
-        Color corAtual = materialItem.color;
-        corAtual.a = alpha;
-        materialItem.color = corAtual;
+        // Aplica a transparência e o brilho HDR
+        // Multiplicamos a cor pela intensidade para "estourar" o Bloom
+        spriteRenderer.color = corOriginal * (novoAlpha * intensidadeGlow);
 
-        // Se estiver usando Shader Graph com uma variável Float chamada "Alpha":
-        // materialItem.SetFloat("_Alpha", alpha);
+        // Garante que o Alpha (transparência) seja aplicado corretamente
+        Color finalColor = spriteRenderer.color;
+        finalColor.a = novoAlpha;
+        spriteRenderer.color = finalColor;
     }
 
     public void Collect(PlayerInventory inventory)
     {
         inventory.AddItem(itemType);
 
-        if (itemType == ItemType.Fruta)
+        if (UIItensController.Instance != null)
         {
-            UIItensController.Instance.UpdateFrutasText(inventory.GetItemCount(ItemType.Fruta));
-        }
-        else if (itemType == ItemType.CuiaLatex)
-        {
-            UIItensController.Instance.UpdateLatexText(inventory.GetItemCount(ItemType.CuiaLatex));
+            if (itemType == ItemType.Fruta)
+                UIItensController.Instance.UpdateFrutasText(inventory.GetItemCount(itemType));
+            else if (itemType == ItemType.CuiaLatex)
+                UIItensController.Instance.UpdateLatexText(inventory.GetItemCount(itemType));
         }
 
         Destroy(gameObject);
