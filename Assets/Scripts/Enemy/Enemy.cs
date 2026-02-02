@@ -23,6 +23,13 @@ public class Enemy : MonoBehaviour
     private bool isCollidingWithPlayer = false;
     private bool canMove = false;
 
+    SoundEffectManager audioManager;
+
+    private void Awake()
+    {
+        audioManager = FindObjectOfType<SoundEffectManager>();
+    }
+
     private void Start()
     {
         animator.SetBool("isMoving", false);

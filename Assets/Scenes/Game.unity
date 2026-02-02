@@ -198,6 +198,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cura
       objectReference: {fileID: 0}
+    - target: {fileID: 966513551749221955, guid: 51087856fdd2a424e8872eee62260771, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 6800380966150656570, guid: 51087856fdd2a424e8872eee62260771, type: 3}
       propertyPath: m_LocalPosition.x
       value: 1.3992003
@@ -350,6 +354,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cura (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 966513551749221955, guid: 51087856fdd2a424e8872eee62260771, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 6800380966150656570, guid: 51087856fdd2a424e8872eee62260771, type: 3}
       propertyPath: m_LocalPosition.x
       value: -15.7525015
@@ -452,6 +460,10 @@ PrefabInstance:
     - target: {fileID: 966513551749221955, guid: 51087856fdd2a424e8872eee62260771, type: 3}
       propertyPath: m_Name
       value: Cura
+      objectReference: {fileID: 0}
+    - target: {fileID: 966513551749221955, guid: 51087856fdd2a424e8872eee62260771, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 6800380966150656570, guid: 51087856fdd2a424e8872eee62260771, type: 3}
       propertyPath: m_LocalPosition.x
@@ -712,6 +724,10 @@ PrefabInstance:
     - target: {fileID: 966513551749221955, guid: 51087856fdd2a424e8872eee62260771, type: 3}
       propertyPath: m_Name
       value: Cura (10)
+      objectReference: {fileID: 0}
+    - target: {fileID: 966513551749221955, guid: 51087856fdd2a424e8872eee62260771, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 6800380966150656570, guid: 51087856fdd2a424e8872eee62260771, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1168,6 +1184,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cura (9)
       objectReference: {fileID: 0}
+    - target: {fileID: 966513551749221955, guid: 51087856fdd2a424e8872eee62260771, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 6800380966150656570, guid: 51087856fdd2a424e8872eee62260771, type: 3}
       propertyPath: m_LocalPosition.x
       value: 10.384473
@@ -1549,6 +1569,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cura (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 966513551749221955, guid: 51087856fdd2a424e8872eee62260771, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 6800380966150656570, guid: 51087856fdd2a424e8872eee62260771, type: 3}
       propertyPath: m_LocalPosition.x
       value: 24.611156
@@ -1610,6 +1634,10 @@ PrefabInstance:
     - target: {fileID: 966513551749221955, guid: 51087856fdd2a424e8872eee62260771, type: 3}
       propertyPath: m_Name
       value: Cura
+      objectReference: {fileID: 0}
+    - target: {fileID: 966513551749221955, guid: 51087856fdd2a424e8872eee62260771, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 6800380966150656570, guid: 51087856fdd2a424e8872eee62260771, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1903,6 +1931,10 @@ PrefabInstance:
     - target: {fileID: 966513551749221955, guid: 51087856fdd2a424e8872eee62260771, type: 3}
       propertyPath: m_Name
       value: Cura (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 966513551749221955, guid: 51087856fdd2a424e8872eee62260771, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 6800380966150656570, guid: 51087856fdd2a424e8872eee62260771, type: 3}
       propertyPath: m_LocalPosition.x
@@ -2747,6 +2779,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cura
       objectReference: {fileID: 0}
+    - target: {fileID: 966513551749221955, guid: 51087856fdd2a424e8872eee62260771, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 6800380966150656570, guid: 51087856fdd2a424e8872eee62260771, type: 3}
       propertyPath: m_LocalPosition.x
       value: -5.7141414
@@ -2839,6 +2875,10 @@ PrefabInstance:
     - target: {fileID: 966513551749221955, guid: 51087856fdd2a424e8872eee62260771, type: 3}
       propertyPath: m_Name
       value: Cura (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 966513551749221955, guid: 51087856fdd2a424e8872eee62260771, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 6800380966150656570, guid: 51087856fdd2a424e8872eee62260771, type: 3}
       propertyPath: m_LocalPosition.x
@@ -3708,6 +3748,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cura (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 966513551749221955, guid: 51087856fdd2a424e8872eee62260771, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 6800380966150656570, guid: 51087856fdd2a424e8872eee62260771, type: 3}
       propertyPath: m_LocalPosition.x
       value: 7.4647446
@@ -4306,6 +4350,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cura (8)
       objectReference: {fileID: 0}
+    - target: {fileID: 966513551749221955, guid: 51087856fdd2a424e8872eee62260771, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 6800380966150656570, guid: 51087856fdd2a424e8872eee62260771, type: 3}
       propertyPath: m_LocalPosition.x
       value: 13.473161
@@ -4430,6 +4478,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cura (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 966513551749221955, guid: 51087856fdd2a424e8872eee62260771, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 6800380966150656570, guid: 51087856fdd2a424e8872eee62260771, type: 3}
       propertyPath: m_LocalPosition.x
       value: 24.900621
@@ -4491,6 +4543,10 @@ PrefabInstance:
     - target: {fileID: 966513551749221955, guid: 51087856fdd2a424e8872eee62260771, type: 3}
       propertyPath: m_Name
       value: Cura (7)
+      objectReference: {fileID: 0}
+    - target: {fileID: 966513551749221955, guid: 51087856fdd2a424e8872eee62260771, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 6800380966150656570, guid: 51087856fdd2a424e8872eee62260771, type: 3}
       propertyPath: m_LocalPosition.x
@@ -87163,6 +87219,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cura (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 966513551749221955, guid: 51087856fdd2a424e8872eee62260771, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 6800380966150656570, guid: 51087856fdd2a424e8872eee62260771, type: 3}
       propertyPath: m_LocalPosition.x
       value: -15.35459
@@ -87651,7 +87711,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1923868188}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Itens
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -87722,7 +87782,7 @@ GameObject:
   - component: {fileID: 1969596086}
   m_Layer: 0
   m_Name: SoundEffectManager
-  m_TagString: Untagged
+  m_TagString: Audio
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -87790,6 +87850,10 @@ PrefabInstance:
     - target: {fileID: 966513551749221955, guid: 51087856fdd2a424e8872eee62260771, type: 3}
       propertyPath: m_Name
       value: Cura (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 966513551749221955, guid: 51087856fdd2a424e8872eee62260771, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 6800380966150656570, guid: 51087856fdd2a424e8872eee62260771, type: 3}
       propertyPath: m_LocalPosition.x

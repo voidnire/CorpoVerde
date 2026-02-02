@@ -9,6 +9,7 @@ TagManager:
   - Collectible
   - UI
   - Cura
+  - Audio
   layers:
   - Default
   - TransparentFX
