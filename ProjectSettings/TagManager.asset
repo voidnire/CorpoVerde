@@ -19,9 +19,9 @@ TagManager:
   - Player
   - Enemies
   - Projetil
-  - 
-  - 
-  - 
+  - WalkinFront
+  - Collision
+  - WalkBehind
   - 
   - 
   - 
