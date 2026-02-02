@@ -1,6 +1,7 @@
 using System.Collections;
 using TMPro;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class VisualNovelController : MonoBehaviour
 {
@@ -111,10 +112,6 @@ public class VisualNovelController : MonoBehaviour
     private void EndDialogue()
     {
         canAdvance = false;
-        // Aqui você pode:
-        // - trocar de cena
-        // - liberar controle do player
-        // - abrir escolhas
-        // - fechar a caixa de texto
+        SceneManager.LoadScene("Game");
     }
 }

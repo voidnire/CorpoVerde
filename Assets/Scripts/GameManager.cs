@@ -49,6 +49,11 @@ public class GameManager : MonoBehaviour
         SceneManager.LoadScene("Game");
     }
 
+    public void StartVisual()
+    {
+        SceneManager.LoadScene("Comeco");
+    }
+
     public void Pause()
     {
         if(UIController.Instance.pausePanel.activeSelf == false
