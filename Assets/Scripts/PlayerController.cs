@@ -69,6 +69,7 @@ public class PlayerController : MonoBehaviour
         else
         {
             animator.SetBool("isMoving", true);
+            //SoundEffectManager.Instance.PlaySFX(SoundEffectManager.Instance.passo2);
         } 
         /*      ANIMAÇÃO     */ 
         
@@ -109,6 +110,8 @@ public class PlayerController : MonoBehaviour
         if (!isImmune)
         {
             Debug.Log(" PLAYER TOMOU DANO");
+            SoundEffectManager.Instance.PlaySFX(SoundEffectManager.Instance.morto1);
+
             isImmune = true;
             immunityTimer = immunityDuration;
 

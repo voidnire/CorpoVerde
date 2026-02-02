@@ -14,7 +14,7 @@ public class SementeBehavior : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
 
         SetDestroyTime();
-
+        SoundEffectManager.Instance.PlaySFX(SoundEffectManager.Instance.ventosoco);
         SetStraightVelocity();
     }
 

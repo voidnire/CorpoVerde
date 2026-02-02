@@ -37,6 +37,7 @@ public class Collectible : MonoBehaviour
     public void Collect(PlayerInventory inventory)
     {
         inventory.AddItem(itemType);
+        SoundEffectManager.Instance.PlaySFX(SoundEffectManager.Instance.pop);
 
         if (UIItensController.Instance != null)
         {
