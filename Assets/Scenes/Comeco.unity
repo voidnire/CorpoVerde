@@ -159,14 +159,10 @@ MonoBehaviour:
       m_Calls: []
   m_text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris nec aliquam
     ipsum. Proin tellus nulla, vulputate nec orci a, pharetra condimentum augue.
-    Pellentesque non sapien rutrum, molestie libero a, mollis elit. Pellentesque
-    habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
-    Ut congue, erat quis ullamcorper vulputate, nunc lacus rhoncus massa, vel dictum
-    nibh elit quis est. Vestibulum arcu justo, cursus quis vestibulum sit amet, interdum
-    nec nibh. '
+    Pellentesque non sapien rutrum, molestie libero a, mollis elit. '
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 9a14a8a1184c5f14fbce3338ea4d7a35, type: 2}
+  m_sharedMaterial: {fileID: 1260715531048141648, guid: 9a14a8a1184c5f14fbce3338ea4d7a35, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -190,15 +186,15 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 36
-  m_fontSizeBase: 36
+  m_fontSize: 50
+  m_fontSizeBase: 50
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 0
   m_HorizontalAlignment: 1
-  m_VerticalAlignment: 512
+  m_VerticalAlignment: 256
   m_textAlignment: 65535
   m_characterSpacing: 0
   m_characterHorizontalScale: 1
@@ -259,8 +255,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0.0000009536743, y: -280.6045}
-  m_SizeDelta: {x: 1520.85, y: 293.12}
+  m_AnchoredPosition: {x: 0.0000009536743, y: -316.57202}
+  m_SizeDelta: {x: 1520.85, y: 192.41}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &925728335
 GameObject:
@@ -308,6 +304,7 @@ MonoBehaviour:
   - "Pegue este peda\xE7o do meu corpo, e v\xE1 em busca dos outros itens, e ao entrar
     nas \xE1guas da gruta m\xE1gica, voc\xEA se conectar\xE1 a mim e eu a voc\xEA...."
   - "V\xE1, esp\xEDritos malignos ir\xE3o tentar te impedir! (barulho de raio .....)"
+  typingSpeed: 0.04
 --- !u!114 &925728337
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -426,7 +423,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -572.93164, y: -50.647823}
+  m_AnchoredPosition: {x: -572.93164, y: -112.991516}
   m_SizeDelta: {x: 509.71, y: 76.71}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1002362075
@@ -672,7 +669,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -628.8962, y: -50.647823}
+  m_AnchoredPosition: {x: -628.8962, y: -112.991516}
   m_SizeDelta: {x: 267.35, y: 76.71}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1322846162
@@ -695,10 +692,10 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Suma\xFAma"
+  m_text: Sumauma
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 9a14a8a1184c5f14fbce3338ea4d7a35, type: 2}
+  m_sharedMaterial: {fileID: 1260715531048141648, guid: 9a14a8a1184c5f14fbce3338ea4d7a35, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -722,13 +719,13 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 36
-  m_fontSizeBase: 36
+  m_fontSize: 50
+  m_fontSizeBase: 50
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
-  m_fontStyle: 0
+  m_fontStyle: 16
   m_HorizontalAlignment: 1
   m_VerticalAlignment: 512
   m_textAlignment: 65535
@@ -809,8 +806,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -280.6045}
-  m_SizeDelta: {x: 1655.57, y: 324.26}
+  m_AnchoredPosition: {x: 0, y: -324.1609}
+  m_SizeDelta: {x: 1655.57, y: 281.89}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1740442345
 MonoBehaviour:
@@ -915,8 +912,8 @@ RectTransform:
   m_Children:
   - {fileID: 1740442344}
   - {fileID: 1002362074}
-  - {fileID: 476232248}
   - {fileID: 1322846161}
+  - {fileID: 476232248}
   m_Father: {fileID: 925728340}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
