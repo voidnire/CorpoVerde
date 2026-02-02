@@ -3,6 +3,9 @@ using System.Collections.Generic;
 
 public class SoundEffectManager : MonoBehaviour
 {
+
+    public static SoundEffectManager Instance;
+
     [Header("-----------Audio Sources---------- -")]
     [SerializeField] AudioSource musicSource;
     [SerializeField] AudioSource SFXSource;
@@ -21,6 +24,28 @@ public class SoundEffectManager : MonoBehaviour
     public AudioClip soco2seco;
     public AudioClip throwknife;
     public AudioClip ventosoco;
+    
+    public AudioClip glubglub;
+    public AudioClip morto1;
+    public AudioClip morto2;
+    public AudioClip morto3;
+    public AudioClip morto4;
+    public AudioClip pop;
+
+
+    private void Awake()
+    {
+        if (Instance == null)
+        {
+            Instance = this;
+            DontDestroyOnLoad(gameObject);
+        }
+        else
+        {
+            Destroy(gameObject);
+        }
+    }
+
 
     private void Start()
     {

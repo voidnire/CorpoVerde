@@ -25,10 +25,6 @@ public class Enemy : MonoBehaviour
 
     SoundEffectManager audioManager;
 
-    private void Awake()
-    {
-        audioManager = FindObjectOfType<SoundEffectManager>();
-    }
 
     private void Start()
     {
@@ -103,6 +99,7 @@ public class Enemy : MonoBehaviour
     private void Attack()
     {
         canMove = false;
+        SoundEffectManager.Instance.PlaySFX(SoundEffectManager.Instance.throwknife); 
         animator.SetTrigger("isAttacking");
         PlayerController.Instance.TakeDamage(damage);
     }
@@ -142,6 +139,7 @@ public class Enemy : MonoBehaviour
     public void TakeDamage(float damageAmount)
     {
         health -= damageAmount;
+        SoundEffectManager.Instance.PlaySFX(SoundEffectManager.Instance.grr1);
 
         DamageNumberController.Instance.CreateNumber(damageAmount, transform.position, Color.green);
 

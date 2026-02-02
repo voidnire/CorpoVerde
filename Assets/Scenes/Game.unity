@@ -3557,7 +3557,7 @@ GameObject:
   - component: {fileID: 792543539}
   m_Layer: 0
   m_Name: Effects
-  m_TagString: Untagged
+  m_TagString: Audio
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -31932,7 +31932,7 @@ GameObject:
   - component: {fileID: 1402229280}
   m_Layer: 0
   m_Name: Music
-  m_TagString: Untagged
+  m_TagString: Audio
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -31971,7 +31971,7 @@ AudioSource:
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
-  Priority: 128
+  Priority: 19
   DopplerLevel: 1
   MinDistance: 1
   MaxDistance: 500
@@ -87826,7 +87826,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   musicSource: {fileID: 1402229280}
   SFXSource: {fileID: 792543539}
-  background: {fileID: 0}
+  background: {fileID: 8300000, guid: 0552c4e577f4c544ba261c08c5c851c4, type: 3}
   grr1: {fileID: 8300000, guid: 67121a1b649d14e4a86a9b3ecb30d5ac, type: 3}
   grr2: {fileID: 8300000, guid: 4ff71c65784b1c549be8f527c766557e, type: 3}
   grr3: {fileID: 8300000, guid: 94f879082d8cab34bbcbe1456318622a, type: 3}
@@ -87839,6 +87839,12 @@ MonoBehaviour:
   soco2seco: {fileID: 8300000, guid: 3025bc3a6864f3f41b2f9c7d68f5c34d, type: 3}
   throwknife: {fileID: 8300000, guid: 54658ce9d2e4d2c46b773f9bd8598018, type: 3}
   ventosoco: {fileID: 8300000, guid: a17b81495866b72428386750eff60224, type: 3}
+  glubglub: {fileID: 8300000, guid: e619fef9bf4e4be4db080bca08f66377, type: 3}
+  morto1: {fileID: 8300000, guid: 507c70c8e9281ea479df1a3ff10d4f31, type: 3}
+  morto2: {fileID: 8300000, guid: b8194287231050b409270958871da68f, type: 3}
+  morto3: {fileID: 8300000, guid: 96112dc8243840c4f8c9a102ddb1c188, type: 3}
+  morto4: {fileID: 8300000, guid: b27788d314718d64b98de5f476e0c1d3, type: 3}
+  pop: {fileID: 8300000, guid: fcd735b5edd557343a521c05049242fe, type: 3}
 --- !u!1001 &1995134159
 PrefabInstance:
   m_ObjectHideFlags: 0
